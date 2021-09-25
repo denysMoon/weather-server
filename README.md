@@ -1,0 +1,1 @@
+## It is a server for [weather-app-react-material-ui](https://github.com/denysMoon/weather-app-react-material-ui)
