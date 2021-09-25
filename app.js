@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
+const PORT = process.env.PORT || 5000
+
 const reviewsRouter = require('./routes/rewies')
 
 const app = express()
@@ -19,4 +21,4 @@ app.use('/reviews', reviewsRouter)
 
 mongoose.connect('mongodb+srv://weather:12345@cluster0.1ce9k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', ()=>console.log('DB On'))
 
-app.listen(3001, ()=>console.log('Server On'))
+app.listen(PORT, ()=>console.log('Server On'))
